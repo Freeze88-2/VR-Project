@@ -1,22 +1,28 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
-using UnityEngine.XR.Interaction.Toolkit;
 
 public class CostumXRcontroller : MonoBehaviour
 {
-    [SerializeField] private XRNode inputSource;
+    [SerializeField] private readonly XRNode inputSource;
+    [SerializeField] private GameObject grabbedObj;
+    [SerializeField] private readonly Transform anchorpoint;
     private InputDevice device;
+    private float timer;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         device = InputDevices.GetDeviceAtXRNode(inputSource);
     }
 
+    private void Update()
+    {
+
+    }
+
     // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         UpdateTrackingInput();
     }
@@ -25,6 +31,16 @@ public class CostumXRcontroller : MonoBehaviour
     {
         Vector3 devicePosition = new Vector3();
         Quaternion deviceRotation = new Quaternion();
+
+        if (device.TryGetFeatureValue(CommonUsages.devicePosition, out devicePosition))
+        {
+            transform.localPosition = devicePosition;
+        }
+
+        if (device.TryGetFeatureValue(CommonUsages.deviceRotation, out deviceRotation))
+        {
+            transform.localRotation = deviceRotation;
+        }
 
 #if LIH_PRESENT_V1API
             if (m_PoseProvider != null)
@@ -50,44 +66,56 @@ public class CostumXRcontroller : MonoBehaviour
                 { 
                     transform.localRotation = poseProviderPose.rotation;
                 }
-            }            
-            else
+            }           
 #endif
-        {
-            if (device.TryGetFeatureValue(CommonUsages.devicePosition, out devicePosition))
-                transform.localPosition = devicePosition;
 
-            if (device.TryGetFeatureValue(CommonUsages.deviceRotation, out deviceRotation))
-                transform.localRotation = deviceRotation;
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("GameController"))
+        {
+            if (grabbedObj != null && other.gameObject == grabbedObj)
+            {
+                grabbedObj = null;
+            }
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        if (grabbedObj != null && other.gameObject == grabbedObj)
+        {
+            timer++;
+
+            if (timer == 200)
+            {
+                StartCoroutine(MoveToAnchorPoint());
+            }
+        }
+        else if (other.gameObject.CompareTag("GameController"))
+        {
+            grabbedObj = other.gameObject;
+            timer = 0;
+        }
+        else if (other.gameObject.CompareTag("Finish") && grabbedObj != null)
+        {
+            grabbedObj.transform.parent = null;
+            grabbedObj.GetComponent<Rigidbody>().isKinematic = false;
+            grabbedObj = null;
         }
     }
 
-    //void HandleInteractionAction(XRNode node, InputHelpers.Button button, ref InteractionState interactionState)
-    //{
-    //    bool pressed = false;
-    //    device.IsPressed(button, out pressed, m_AxisToPressThreshold);
-
-    //    if (pressed)
-    //    {
-    //        if (!interactionState.active)
-    //        {
-    //            interactionState.activatedThisFrame = true;
-    //            interactionState.active = true;
-    //        }
-    //    }
-    //    else
-    //    {
-    //        if (interactionState.active)
-    //        {
-    //            interactionState.deActivatedThisFrame = true;
-    //            interactionState.active = false;
-    //        }
-    //    }
-    //}
-    // Override the XRController's current position and rotation (used for interaction state playback)
-    internal void UpdateControllerPose(Vector3 position, Quaternion rotation)
+    private IEnumerator MoveToAnchorPoint()
     {
-        transform.localPosition = position;
-        transform.localRotation = rotation;
+        Rigidbody rb = grabbedObj.GetComponent<Rigidbody>();
+
+        grabbedObj.transform.parent = transform.transform;
+        grabbedObj.GetComponent<Rigidbody>().isKinematic = true;
+
+        while (grabbedObj.transform.position != anchorpoint.position)
+        {
+            rb.MovePosition(anchorpoint.position);
+            yield return null;
+        }
     }
 }

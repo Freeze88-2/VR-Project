@@ -1,8 +1,8 @@
 ﻿public class Finger
 {
-    public FingerType Type {get;}
-    public float Current {get; set;}
-    public float Target{get; set;}
+    public FingerType Type { get; }
+    public float Current { get; set; }
+    public float Target { get; set; }
 
     public Finger(FingerType type)
     {

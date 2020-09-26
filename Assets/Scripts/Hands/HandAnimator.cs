@@ -1,14 +1,13 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.XR.Interaction.Toolkit;
-using System.Collections.Generic;
-using Unity.XR.Oculus;
 
 [RequireComponent(typeof(Animator))]
 public class HandAnimator : MonoBehaviour
 {
-    [SerializeField] private float _speed;
-    [SerializeField] private XRController _controller;
+    [SerializeField] private readonly float _speed;
+    [SerializeField] private readonly XRController _controller;
 
     private Animator _animator;
 
@@ -25,16 +24,19 @@ public class HandAnimator : MonoBehaviour
         new Finger(FingerType.Thumb)
     };
 
-    private Finger thumb = new Finger(FingerType.Thumb);
+    private readonly Finger thumb = new Finger(FingerType.Thumb);
 
     private void Awake()
     {
         _animator = GetComponent<Animator>();
     }
 
-    private void Update() 
+    private void Update()
     {
-        if (!_controller.enableInputActions) return;
+        if (!_controller.enableInputActions)
+        {
+            return;
+        }
         // Get input values
         CheckGrip();
         CheckPointer();
@@ -71,10 +73,9 @@ public class HandAnimator : MonoBehaviour
 
     private void CheckThumb()
     {
-        bool primaryAxisTouch, primaryTouch, secondaryTouch;
-        _controller.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxisTouch, out primaryAxisTouch);
-	    _controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryTouch, out primaryTouch);
-	    _controller.inputDevice.TryGetFeatureValue(CommonUsages.secondaryTouch, out secondaryTouch);
+        _controller.inputDevice.TryGetFeatureValue(CommonUsages.primary2DAxisTouch, out bool primaryAxisTouch);
+        _controller.inputDevice.TryGetFeatureValue(CommonUsages.primaryTouch, out bool primaryTouch);
+        _controller.inputDevice.TryGetFeatureValue(CommonUsages.secondaryTouch, out bool secondaryTouch);
 
         bool down = primaryAxisTouch | primaryTouch | secondaryTouch;
         thumb.Target = down ? 1.0f : 0.0f;
@@ -82,7 +83,7 @@ public class HandAnimator : MonoBehaviour
 
     private void SetFingerTargets(List<Finger> fingers, float target)
     {
-        foreach(Finger finger in fingers)
+        foreach (Finger finger in fingers)
         {
             finger.Target = target;
         }
@@ -90,7 +91,7 @@ public class HandAnimator : MonoBehaviour
 
     private void SmoothFinger(IEnumerable<Finger> fingers)
     {
-        foreach(Finger finger in fingers)
+        foreach (Finger finger in fingers)
         {
             float t = _speed * Time.unscaledDeltaTime;
             finger.Current = Mathf.MoveTowards(finger.Current, finger.Target, t);
@@ -105,7 +106,7 @@ public class HandAnimator : MonoBehaviour
 
     private void AnimateFingers(IEnumerable<Finger> fingers)
     {
-        foreach(Finger finger in fingers)
+        foreach (Finger finger in fingers)
         {
             AnimateFingers(finger.Type.ToString(), finger.Current);
         }
