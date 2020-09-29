@@ -2,8 +2,8 @@
 using UnityEngine.XR;
 public class Movement : MonoBehaviour
 {
-    [SerializeField] private readonly float speed = 1f;
-    [SerializeField] private readonly XRNode inputSource;
+    [SerializeField] private float speed = 1f;
+    [SerializeField] private XRNode inputSource;
     private Vector2 inputAxis;
     private CharacterController character;
 

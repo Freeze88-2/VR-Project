@@ -6,25 +6,25 @@ using UnityEngine.XR.Interaction.Toolkit;
 [RequireComponent(typeof(Animator))]
 public class HandAnimator : MonoBehaviour
 {
-    [SerializeField] private readonly float _speed;
-    [SerializeField] private readonly XRController _controller;
+    [SerializeField] private float _speed;
+    [SerializeField] private CostumXRTracker _controller;
 
     private Animator _animator;
 
-    private readonly List<Finger> gripFingers = new List<Finger>
+    private List<Finger> gripFingers = new List<Finger>
     {
         new Finger(FingerType.Pinky),
         new Finger(FingerType.Ring),
         new Finger(FingerType.Middle)
     };
 
-    private readonly List<Finger> pointFingers = new List<Finger>
+    private List<Finger> pointFingers = new List<Finger>
     {
         new Finger(FingerType.Index),
         new Finger(FingerType.Thumb)
     };
 
-    private readonly Finger thumb = new Finger(FingerType.Thumb);
+    private Finger thumb = new Finger(FingerType.Thumb);
 
     private void Awake()
     {
@@ -33,10 +33,10 @@ public class HandAnimator : MonoBehaviour
 
     private void Update()
     {
-        if (!_controller.enableInputActions)
-        {
-            return;
-        }
+        //if (!_controller.enableInputActions)
+        //{
+        //    return;
+        //}
         // Get input values
         CheckGrip();
         CheckPointer();
