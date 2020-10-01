@@ -6,7 +6,217 @@ ModelImporter:
   - first:
       74: -203655887218126122
     second: mixamo.com
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bodymat
+    second: {fileID: 2100000, guid: 8547150d661530f44bfe3af7eeb6549c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottommat
+    second: {fileID: 2100000, guid: 1d23c2d839697a649b90968522b9c1c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glovemat
+    second: {fileID: 2100000, guid: 4e66961073ced7a45bdd13511cda413c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Hairmat
+    second: {fileID: 2100000, guid: c99dba990aa03e740bcb4d0cfef096b9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Maskmat
+    second: {fileID: 2100000, guid: bb5424a98954845478ce55e7fdb737db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Shoesmat
+    second: {fileID: 2100000, guid: 35fd986a57f3ed34fb95652493485236, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Topmat
+    second: {fileID: 2100000, guid: 9a8c90206ff456f43a2505ec16486da3, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Body_Diffuse
+    second: {fileID: 2800000, guid: 038c45bcb23a51a408848e442ba53e32, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Body_Gloss
+    second: {fileID: 2800000, guid: c73dc8941959bcd4e9558c136840954a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Body_Normal
+    second: {fileID: 2800000, guid: c2c99b277fdb59d4ba847b5b45185680, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Body_Opacity
+    second: {fileID: 2800000, guid: fe26b33f8abef3f41b44e526fc899134, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Body_Specular
+    second: {fileID: 2800000, guid: bdece7bf6a14ef047a2aa870858ed645, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Bottom_Diffuse
+    second: {fileID: 2800000, guid: 7701e2b29b5f2a94d8a64500092b33dc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Bottom_Gloss
+    second: {fileID: 2800000, guid: d05a673aa67972442b6269ee54991cf1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Bottom_Normal
+    second: {fileID: 2800000, guid: 0bd7e0917e5d67544909583f7a8f09bf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Bottom_Opacity
+    second: {fileID: 2800000, guid: 79422171a51d3c446b09e5e82f650fd9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Bottom_Specular
+    second: {fileID: 2800000, guid: 162c4370223a295418191bffd9ea161c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Glove_Diffuse
+    second: {fileID: 2800000, guid: 968a06d6eeff14d4f829a07d0e4979ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Glove_Gloss
+    second: {fileID: 2800000, guid: 90659cbe9332c064d83cc917674d28c1, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Glove_Normal
+    second: {fileID: 2800000, guid: 68e91c1596c667642add00bfdbcb4705, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Glove_Opacity
+    second: {fileID: 2800000, guid: 8659f1d045147814c9335d264f8caf18, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Glove_Specular
+    second: {fileID: 2800000, guid: 7815fb84b1361fe4b967edd84266eee2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Hair_Diffuse
+    second: {fileID: 2800000, guid: 86e72475eefa1f14a9c7564b770984c2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Hair_Gloss
+    second: {fileID: 2800000, guid: 457a03d5d5b6f9c4ca99b8b1281cc551, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Hair_Normal
+    second: {fileID: 2800000, guid: 52701a596d6821647a0296c5a53026d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Hair_Opacity
+    second: {fileID: 2800000, guid: 92736be89b74d17438e3cf0d1047129f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Hair_Specular
+    second: {fileID: 2800000, guid: 9402ca9e524879040b1148abf42fefa3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Mask_Diffuse
+    second: {fileID: 2800000, guid: 0f1a53991a0f60a48a252da2d3e3b0f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Mask_Gloss
+    second: {fileID: 2800000, guid: 720bd9690fb0e6449aa04e2b157412fd, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Mask_Normal
+    second: {fileID: 2800000, guid: 02f3c854a6dce0e4abb8572f3c50e25c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Mask_Opacity
+    second: {fileID: 2800000, guid: b5cc8049b065e0b4b891da4f48d76c8a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Mask_Specular
+    second: {fileID: 2800000, guid: 7ed18f7e32458dc49bcda66513e3fd0e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Shoes_Diffuse
+    second: {fileID: 2800000, guid: fdc7ccdedd32e5148a12fc0148a98368, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Shoes_Gloss
+    second: {fileID: 2800000, guid: d47dd722bf8048144a6b62b7cf6336a0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Shoes_Normal
+    second: {fileID: 2800000, guid: 6c0bd6cc8e208444d9f0db63cc444a25, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Shoes_Opacity
+    second: {fileID: 2800000, guid: 918eff4edf6c0e249b003834ea92ec2e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Shoes_Specular
+    second: {fileID: 2800000, guid: aa7ef5505b5e2704a850a8f23f131599, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Top_Diffuse
+    second: {fileID: 2800000, guid: 79fa8b6e66aba2141abd30111a4bf643, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Top_Gloss
+    second: {fileID: 2800000, guid: 0936cf845b5b7dc47b20b42244f1869c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Top_Normal
+    second: {fileID: 2800000, guid: 085afa481aa0cc541ad6cd2e9fe51a83, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Top_Opacity
+    second: {fileID: 2800000, guid: 8b963811b74dbad4692702b0e2699612, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: enfermeira3_Top_Specular
+    second: {fileID: 2800000, guid: 22cda335269211d4ba6b341e5c07a484, type: 3}
   materials:
     materialImportMode: 1
     materialName: 0

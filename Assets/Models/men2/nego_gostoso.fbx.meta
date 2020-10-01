@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: f4043ecb61b395d4a8f14e6e43ee0181
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable:
+  - first:
+      74: -203655887218126122
+    second: mixamo.com
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Beard_Diffuse
+    second: {fileID: 2800000, guid: 5efc900808cda6a4c9bb541ee6137b3b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Beard_Gloss
+    second: {fileID: 2800000, guid: c4f9d66aa9c40af42a5d39d82eff67c7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Beard_Normal
+    second: {fileID: 2800000, guid: ef7710aa2106d7c4f9d4280cff8312fe, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Beard_Opacity
+    second: {fileID: 2800000, guid: 1772eaa4f80c9dd4a8156137d0518bac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Beard_Specular
+    second: {fileID: 2800000, guid: 5ca9699ab25d4464980d147d0a0e2e8d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Body_Diffuse
+    second: {fileID: 2800000, guid: 7d16799d3b3c86e40a9d90923636cf78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Body_Gloss
+    second: {fileID: 2800000, guid: 0e7a37cda4de79d46a0aa759652d0eb3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Body_Normal
+    second: {fileID: 2800000, guid: f895a0c00a7e9df459fc8cc23938e41d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Body_Opacity
+    second: {fileID: 2800000, guid: ac11d6429719f14478534a588dd24aca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Body_Specular
+    second: {fileID: 2800000, guid: 3aa1e4a0d3bce4a48b315f098f41afe5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Bottom_Diffuse
+    second: {fileID: 2800000, guid: ce97f6f8d65ba0c41b26c77cb5c2e1ca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Bottom_Gloss
+    second: {fileID: 2800000, guid: 82d23bae4dae71b44b99d33d52412db9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Bottom_Normal
+    second: {fileID: 2800000, guid: 7770f628c3a756b40bc6085b29dd7aa8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Bottom_Opacity
+    second: {fileID: 2800000, guid: 32f6015602f4ad84f8dd6e44a2ddfc81, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Bottom_Specular
+    second: {fileID: 2800000, guid: 72370d472e5c90c4aa191e5d034a093f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Hair_Diffuse
+    second: {fileID: 2800000, guid: 33e010bb724c7d24eac95d09f9e21bdc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Hair_Gloss
+    second: {fileID: 2800000, guid: ca51e075d16e1054aa3b62d98292adb5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Hair_Normal
+    second: {fileID: 2800000, guid: c227c24b699b3dc46b8f0614a231f5df, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Hair_Opacity
+    second: {fileID: 2800000, guid: dcdb029c5a4bed64fa93d11ee42d78ee, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Hair_Specular
+    second: {fileID: 2800000, guid: 8ce4ad19df1c684409519d762227131e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Moustache_Diffuse
+    second: {fileID: 2800000, guid: b4866b114a18d934ca3b7a732c518034, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Moustache_Gloss
+    second: {fileID: 2800000, guid: b4647d121f8872841b5172fc14a10472, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Moustache_Normal
+    second: {fileID: 2800000, guid: 28fb0bcb7ca7fcf4fbc82526f1813a0a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Moustache_Opacity
+    second: {fileID: 2800000, guid: 922abcb494e1d2348886e2300247cbad, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Moustache_Specular
+    second: {fileID: 2800000, guid: 4e02882a0972467468841f071e1acdb9, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Shoes_Diffuse
+    second: {fileID: 2800000, guid: 5882a9975ea30014dac53d71ed75c4f7, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Shoes_Gloss
+    second: {fileID: 2800000, guid: c04436a709e27bc46a726a24010a8dac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Shoes_Normal
+    second: {fileID: 2800000, guid: fd03b156e142fe3418d9f634758a0434, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Shoes_Opacity
+    second: {fileID: 2800000, guid: 4e616e770c13bac4e8e4f466b7c225d3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Shoes_Specular
+    second: {fileID: 2800000, guid: 65c58497719855848ac815f38a220820, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Top_Diffuse
+    second: {fileID: 2800000, guid: d378bf84533f9b64bb6f97c9ce5ac660, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Top_Gloss
+    second: {fileID: 2800000, guid: 1416cca104a285f4099ea813378acbf6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Top_Normal
+    second: {fileID: 2800000, guid: 23790b3f8a71f634887b354e0c989840, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Top_Opacity
+    second: {fileID: 2800000, guid: 017c252aca117ad4ebfacbad9399e7d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: nego_gostoso_Top_Specular
+    second: {fileID: 2800000, guid: 33f48b694c7bab044bbc3141ded5c1f4, type: 3}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips:
+  - 6b2520876f9c86d4da2008080fc0415f
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
